@@ -19,7 +19,7 @@
         style="display: none"
       />
       <v-btn
-        color="#578E7E"
+        color="#89A8B2"
         variant="outlined"
         width="100%"
         class="ml-md-1"

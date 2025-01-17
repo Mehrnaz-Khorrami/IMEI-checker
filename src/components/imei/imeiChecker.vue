@@ -13,7 +13,7 @@
     </v-card-text>
     <v-card-actions>
       <v-btn
-        color="#578E7E"
+        color="#89A8B2"
         variant="flat"
         width="100%"
       >

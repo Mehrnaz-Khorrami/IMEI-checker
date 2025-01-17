@@ -58,7 +58,12 @@ em,
     border-radius: 16px !important;
     font-size: 12px !important;
 }
+
 .v-card {
     border-radius: 16px !important;
+}
 
+.v-app-bar {
+    border-bottom-left-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
 }

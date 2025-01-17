@@ -1,8 +1,6 @@
 <template>
-  <v-card
-    height="100vh"
-    class="pa-5"
-    color="#F5ECD5"
+  <div
+    class="pa-5 imeiTable-container"
   >
     <v-card-text>
       <v-data-table
@@ -26,7 +24,7 @@
         </template>
       </v-data-table>
     </v-card-text>
-  </v-card>
+  </div>
 </template>
 <script setup>
 import { ref } from "vue";
@@ -99,4 +97,9 @@ const headerTable = ref([
   { title: "وضعیت", key: "status", align: "end" },
 ]);
 </script>
-<style lang="css"></style>
+<style lang="css">
+.imeiTable-container{
+  height: 100vh;
+  background-color: #B3C8CF;
+}
+</style>

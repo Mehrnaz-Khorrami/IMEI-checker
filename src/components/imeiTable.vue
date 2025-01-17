@@ -1,0 +1,93 @@
+<template>
+  <v-card
+    height="100vh"
+    class="pa-5"
+    color="#F5ECD5"
+  >
+    <v-card-text>
+      <v-data-table
+        :headers="headerTable"
+        :items="items"
+        items-per-page="10"
+      >
+        <template #[`item.status`]="{ item }">
+          <v-icon
+            v-if="!item.status"
+            color="red"
+          >
+            mdi-close
+          </v-icon>
+          <v-icon
+            v-else
+            color="green"
+          >
+            mdi-check
+          </v-icon>
+        </template>
+      </v-data-table>
+    </v-card-text>
+  </v-card>
+</template>
+<script setup>
+import { ref } from "vue";
+
+// it's use until get the data from backend
+const items = ref([
+  {
+    box: "1",
+    imei1: "02154548f8e45233",
+    imei2: "215wd21D54fd354gs4",
+    status: true,
+  },
+  {
+    box: "2",
+    imei1: "dv21xcv21xvsdf21f",
+    imei2: "fsd21f321fsd12fs2d",
+    status: true,
+  },
+  {
+    box: "3",
+    imei1: "sd31d62vx3v216v2",
+    imei2: "2d1f1231ds12ff1sd31",
+    status: true,
+  },
+  {
+    box: "4",
+    imei1: "21fdsvs22s6fd565",
+    imei2: "dsfsdf231sf21fs21df1",
+    status: false,
+  },
+  {
+    box: "5",
+    imei1: "1fds5fsd54sdf21",
+    imei2: "5s46ffsdf1s1f321sf231",
+    status: false,
+  },
+  {
+    box: "6",
+    imei1: "d6f5sd4f53sf45f4s",
+    imei2: "231f53sd1fs21fs31fs",
+    status: true,
+  },
+  {
+    box: "7",
+    imei1: "25d1sf5s3df4s5f4sd",
+    imei2: "3f15sd4f5sf4s5f2d",
+    status: false,
+  },
+  {
+    box: "8",
+    imei1: "54dsf5dsf3fs56d4f56",
+    imei2: "sf65sdf3s2fs6f6s5f",
+    status: true,
+  },
+]);
+
+const headerTable = ref([
+  { title: "شماره جعبه", key: "box", align: "start" },
+  { title: "سریال نامبر۱", key: "imei1", align: "center" },
+  { title: "سریال نامبر۲", key: "imei2", align: "center" },
+  { title: "وضعیت", key: "status", align: "end" },
+]);
+</script>
+<style lang="css"></style>

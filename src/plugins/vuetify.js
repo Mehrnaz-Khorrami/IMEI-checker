@@ -16,4 +16,7 @@ export default createVuetify({
   theme: {
     // defaultTheme: 'dark',
   },
+  styles: {
+    configFile: 'src/styles/settings.scss',
+  }
 })

@@ -8,3 +8,7 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+$font-family: "Vazirmatn";
+@forward "vuetify/styles" with (
+  $body-font-family: $font-family
+);

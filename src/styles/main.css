@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("/src/assets/font/Vazirmatn-UI-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("/src/assets/font/Vazirmatn-UI-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "VazirFD";
+    src: url("/src/assets/font/Vazirmatn-UI-FD-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "VazirFD";
+    src: url("/src/assets/font/Vazirmatn-UI-FD-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.fa-num {
+    font-family: "VazirFD", sans-serif !important;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+strong,
+em,
+[class^="text-"] {
+    font-family: Vazirmatn, sans-serif !important;
+}

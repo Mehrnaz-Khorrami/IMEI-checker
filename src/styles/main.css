@@ -50,7 +50,15 @@ em,
     font-family: Vazirmatn, sans-serif !important;
 }
 
+.v-btn {
+    letter-spacing: normal !important;
+}
+
 .v-data-table {
     border-radius: 16px !important;
     font-size: 12px !important;
+}
+.v-card {
+    border-radius: 16px !important;
+
 }
